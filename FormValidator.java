@@ -31,8 +31,8 @@ public class FormValidator {
         System.out.println("Número Real válido: " + validar(regexNumeroReal, numeroReal));
     }
 
-    // Regex para validação de nome completo: limita o nome a 50 caracteres e permite até dois sobrenomes
-    public static String regexNome = "^[A-Z][a-z]{1,49}( [A-Z][a-z]{1,49}){1,2}$";
+    // Regex para validação de nome completo: permite o nome do meio opcional
+    public static String regexNome = "^[A-Z][a-z]+( [A-Z][a-z]+)? [A-Z][a-z]+$";
 
     // Regex para validação de e-mail: permite letras minúsculas, números e aceita domínios com ".com.br" ou ".br"
     public static String regexEmail = "^[a-z0-9]+([._-]?[a-z0-9]+)*@[a-z0-9]+\\.(com\\.br|br)$";
@@ -43,8 +43,8 @@ public class FormValidator {
     // Regex para validação de CPF: formato fixo xxx.xxx.xxx-xx com exatamente 11 dígitos
     public static String regexCPF = "^\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}$";
 
-    // Regex para validação de telefone: formato (xx) 9xxxx-xxxx ou xx 9xxxxxxxx, com exatamente 11 dígitos
-    public static String regexTelefone = "^\\(\\d{2}\\) 9\\d{4}-\\d{4}$|^\\d{2} 9\\d{8}$";
+    // Regex para validação de telefone: cobre todos os formatos solicitados
+    public static String regexTelefone = "^\\(\\d{2}\\) 9\\d{4}-\\d{4}$|^\\(\\d{2}\\) 9\\d{8}$|^\\d{2} 9\\d{8}$";
 
    // Verifica limites de dias (01-31), meses (01-12), horas (00-23), minutos e segundos (00-59)
     public static String regexDataHora = "^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\\d{4} (0[0-9]|1[0-9]|2[0-3]):([0-5][0-9]):([0-5][0-9])$";
