@@ -14,4 +14,4 @@ O propósito deste repositório é oferecer uma maneira estruturada, acessível 
 
 ---
 
-Este projeto está sendo mantido de forma aberta e transparente, incentivando boas práticas de desenvolvimento e versionamento de código. Contribuições e sugestões são bem-vindas!
+Este projeto está sendo mantido de forma aberta e transparente, incentivando boas práticas de desenvolvimento e versionamento de código.
